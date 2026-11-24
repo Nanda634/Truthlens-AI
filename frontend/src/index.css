@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-base-950 text-slate-200;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.card {
+  @apply bg-base-800 border border-base-600 rounded-xl;
+}
+
+.btn-primary {
+  @apply bg-accent-500 hover:bg-accent-600 text-base-950 font-semibold px-4 py-2 rounded-lg transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-base-700 hover:bg-base-600 text-slate-200 font-medium px-4 py-2 rounded-lg transition-colors border border-base-600;
+}
+
+.label-authentic { @apply text-emerald-400 bg-emerald-500/10 border-emerald-500/30; }
+.label-suspicious { @apply text-amber-400 bg-amber-500/10 border-amber-500/30; }
+.label-manipulated { @apply text-red-400 bg-red-500/10 border-red-500/30; }
